@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Forum';
+  src: url(./fonts/Forum-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
