@@ -1,6 +1,7 @@
-* {
+*, p {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -45,7 +46,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 18px 20px 18px 20px;
 }
 
 .ul__wrapper {
@@ -74,4 +75,33 @@ html {
   margin-left: 10px;
   width: 28px;
   height: 28px;
+}
+
+/** Welcome **/
+
+.image-container {
+  height: 600px;
+  background: url(./assets/Welcome.png) no-repeat;
+  background-size: cover;
+}
+
+.welcome-title {
+  position: relative;
+  top: 220px;
+  width: 600px;
+  background-color: black;
+}
+
+.welcome-title h2 {
+  opacity: 1;
+  padding: 35px 35px 35px 35px;
+  color: #FFF;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
