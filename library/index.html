@@ -38,56 +38,155 @@
       </div>
     </header>
   </div>
-  <section class="welcome">
-    <div class="image-container">
-      <div class="welcome-title">
-        <h2>Welcome&nbsp<br>to the Brooklyn<br>Library</h2>
+  <main class="main">
+    <section class="welcome">
+      <div class="image-container">
+        <div class="welcome-title">
+          <h2>Welcome&nbsp<br>to the Brooklyn<br>Library</h2>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="about">
-    <div class="title-wrapper">
-      <h2 class="about-title">About</h2>
-      <p>
-        The Brooklyn Library is a free workspace, 
-        a large number of books and a cozy coffee shop inside 
-      </p>
-    </div>
-    <div class="images-items">
-      <img src="./assets/image1-about.png" alt="" srcset="">
-      <img src="./assets/image2-about.png" alt="" srcset="">
-      <img src="./assets/image3-about.png" alt="" srcset="">
-    </div>
-    <div class="pagination">
-      <div class="button-container">
-        <button class="pag-button pagination-1"></button>
+    </section>
+    <section class="about">
+      <div class="title-wrapper">
+        <h2 class="section-title">About</h2>
+        <p>
+          The Brooklyn Library is a free workspace, 
+          a large number of books and a cozy coffee shop inside 
+        </p>
       </div>
-      <div class="button-container">
-        <button class="pag-button pagination-2"></button>
+      <div class="images-items">
+        <img src="./assets/image1-about.png" alt="" srcset="">
+        <img src="./assets/image2-about.png" alt="" srcset="">
+        <img src="./assets/image3-about.png" alt="" srcset="">
       </div>
-      <div class="button-container">
-        <button class="pag-button pagination-3"></button>
+      <div class="pagination">
+        <div class="button-container">
+          <button class="pag-button pagination-1"></button>
+        </div>
+        <div class="button-container">
+          <button class="pag-button pagination-2"></button>
+        </div>
+        <div class="button-container">
+          <button class="pag-button pagination-3"></button>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="favorites">
-    <h2 class="favorites-title">Favorites</h2>
-    <p>Pick favorites of season</p>
-    <div class="favorites-inputs">
-      <input type="radio" name="Winter" id="">
-      <label>Winter</label>
-      <input type="radio" name="Winter" id="">
-      <label>Spring</label>
-      <input type="radio" name="Winter" id="">
-      <label>Summer</label>
-      <input type="radio" name="Winter" id="">
-      <label>Autumn</label>
-    </div>
-    <div class="favorites-wrapper">
-      <div class="favorites-book">
-        
+    </section>
+    <section class="favorites">
+      <h2 class="section-title">Favorites</h2>
+      <p class="favorites-title-header">Pick favorites of season</p>
+      <div class="favorites-inputs">
+        <div class="favorites-inputs__input">
+          <input id="winterSeason" type="radio" name="favorite" value="winter">
+          <label for="winterSeason" class="pick-favorites__btn-label" title="Winter">Winter</label>
+        </div>
+        <div class="favorites-inputs__input">
+          <input id="winterSeason" type="radio" name="favorite" value="spring">
+          <label for="winterSeason" class="pick-favorites__btn-label" title="Spring">Spring</label>
+        </div>
+        <div class="favorites-inputs__input">
+          <input id="winterSeason" type="radio" name="favorite" value="ummer">
+          <label for="winterSeason" class="pick-favorites__btn-label" title="Summer">Summer</label>
+        </div>
+        <div class="favorites-inputs__input">
+          <input id="winterSeason" type="radio" name="favorite" value="autumn">
+          <label for="winterSeason" class="pick-favorites__btn-label" title="Autumn">Autumn</label>
+        </div>
       </div>
-    </div>
-  </section>
+      <div class="favorites-wrapper">
+          <div class="favorites-book__item">
+            <span class="favorites-book__item-title">Staff picks</span>
+            <div class="favorites-book__item-title__container">
+              <h4 class="favorites-book__item-header">THE BOOK EATERS<h4>
+              <p class="favorites-book__item-author">By Sunyi Dean</p>
+            </div>
+            <div class="favorites-book__container">
+              <div class="favorites-book__container-text">
+                An unusual sci-fi story about a book eater woman who 
+                tries desperately to save her dangerous mind-eater son
+                from tradition and certain death. Complete with dysfunctional 
+                family values, light Sapphic romance, and a strong, complex 
+                protagonist. Not for the faint of heart.
+              </div>
+              <div class="favorites-book__container-img">
+                <img src="./assets/favorites/book-1.png" alt="">
+              </div>
+            </div>
+              <button class="favorites-book__button">Buy</button>
+          </div>
+          <div class="favorites-book__item">
+            <span class="favorites-book__item-title">Staff picks</span>
+            <div class="favorites-book__item-title__container">
+              <h4 class="favorites-book__item-header">Cackle<h4>
+              <p class="favorites-book__item-author">By Rachel Harrison</p>
+            </div>
+            <div class="favorites-book__container">
+              <div class="favorites-book__container-text">
+                Are your Halloween movies of choice The Witches of Eastwick 
+                and Practical Magic? Look no further than here - where a woman 
+                recovering from a breakup moves to a quaint town in upstate New 
+                York and befriends a beautiful witch.
+              </div>
+              <div class="favorites-book__container-img">
+                <img src="./assets/favorites/book-4.png" alt="">
+              </div>
+            </div>
+              <button class="favorites-book__button second-button">Buy</button>
+          </div>
+          <div class="favorites-book__item">
+            <span class="favorites-book__item-title">Staff picks</span>
+            <div class="favorites-book__item-title__container">
+              <h4 class="favorites-book__item-header">Dante: Poet of the Secular World<h4>
+              <p class="favorites-book__item-author">By Erich Auerbach</p>
+            </div>
+            <div class="favorites-book__container">
+              <div class="favorites-book__container-text">
+                Auerbach's engaging book places the 'Comedy' 
+                within the tradition of epic, tragedy, 
+                and philosophy in general, arguing for Dante's 
+                uniqueness as one who raised the individual and 
+                his drama of soul into something of divine 
+                significance—an inspired introduction to Dante's main themes.
+              </div>
+              <div class="favorites-book__container-img">
+                <img src="./assets/favorites/book-3.png" alt="">
+              </div>
+            </div>
+              <button class="favorites-book__button">Buy</button>
+          </div>
+          <div class="favorites-book__item">
+            <span class="favorites-book__item-title">Staff picks</span>
+            <div class="favorites-book__item-title__container">
+              <h4 class="favorites-book__item-header">The Last Queen<h4>
+              <p class="favorites-book__item-author">By Clive Irving</p>
+            </div>
+            <div class="favorites-book__container">
+              <div class="favorites-book__container-text">
+                A timely and revelatory new biography of 
+                Queen Elizabeth (and her family) exploring 
+                how the Windsors have evolved and thrived 
+                as the modern world has changed around them.
+              </div>
+              <div class="favorites-book__container-img">
+                <img src="./assets/favorites/book-2.png" alt="">
+              </div>
+            </div>
+              <button class="favorites-book__button fourth-button">Buy</button>
+          </div>
+          
+      </div>
+    </section>
+    <section class="coffee-shop">
+      <h2 class="section-title">Coffee Shop</h2>
+    </section>
+    <section class="coffee-shop">
+      <h2 class="section-title">Our Contacts</h2>
+    </section>
+    <section class="coffee-shop">
+      <h2 class="section-title">Digital Library Cards</h2>
+    </section>
+  </main>
+  <footer class="footer">
+
+  </footer>
 </body>
 </html>

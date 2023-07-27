@@ -1,7 +1,17 @@
-*, p {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400
 }
 
 html {
@@ -17,6 +27,27 @@ html {
 @font-face {
   font-family: 'Inter';
   src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.section-title {
+  padding-top: 20px;
+  color: #0C0C0E;
+  font-family: 'Forum';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  &:after {
+    content: '';
+    display: block;
+    margin: 20px auto 0;
+    width: 50px;
+    height: 1px;
+    background: #0C0C0E;
+  }
 }
 
 .wrapper {
@@ -113,26 +144,6 @@ html {
   margin: 0 auto;
 }
 
-.about-title {
-  color: #0C0C0E;
-  font-family: 'Forum';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 2px;
-  padding-top: 20px;
-  text-align: center;
-  &:after {
-    content: '';
-    display: block;
-    margin: 20px auto 0;
-    width: 50px;
-    height: 1px;
-    background: #0C0C0E;
-  }
-}
-
 .about p {
   color: #000;
   text-align: center;
@@ -153,7 +164,7 @@ html {
 .pagination {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 
 .pag-button {
@@ -162,6 +173,7 @@ html {
   height: 16px;
   border-radius: 10px;
   border: 0;
+  margin: 5px;
 }
 
 .pag-button:hover {
@@ -169,10 +181,7 @@ html {
 }
 
 .button-container {
-  display: flex;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
+  margin-top: -5px;
 }
 
 .button-container:hover {
@@ -190,28 +199,8 @@ html {
   margin: 0 auto;
 }
 
-.favorites-title {
-  padding-top: 20px;
-  color: #0C0C0E;
-  font-family: 'Forum';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px; /* 100% */
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  text-align: center;
-  &:after {
-    content: '';
-    display: block;
-    margin: 20px auto 0;
-    width: 50px;
-    height: 1px;
-    background: #0C0C0E;
-  }
-}
 
-.favorites p {
+.favorites-title-header {
   color: #000;
   font-family: 'Inter';
   font-size: 20px;
@@ -233,10 +222,123 @@ html {
 
 .favorites-inputs {
   display: flex;
-  gap: 40px;
+  gap: 90px;
   padding: 40px 0px 40px 20px;
 }
 
-.favorites-book {
-  
+.favorites-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 260px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+
+.favorites-book__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  min-height: 555px;
+  width: 550px;
+  padding: 14px 0 0 19px;
+}
+
+.favorites-book__item-title__container {
+  padding-top: 18px;
+}
+
+.favorites-book__item-title {
+  color: #000;
+  font-family: 'Forum';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  &:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: #BB945F;
+  }
+}
+
+.favorites-book__item-header {
+  color: #000;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.favorites-book__item-author {
+  color: #000;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+/* .favorites-book__container {
+  flex-grow: 0.4;
+  flex-shrink: 1;
+  flex-basis: auto;
+} */
+
+.favorites-book__container-text {
+  color: #000;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  width: 357px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.favorites-book__container-img {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  left: 389px;
+  bottom: -1px;
+  overflow: hidden;
+}
+
+.favorites-book__button {
+  border-radius: 2px;
+  border: 1px solid #0C0C0E;
+  width: 75px;
+  height: 30px;
+  color: #0C0C0E;
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  background: transparent;
+}
+
+.second-button {
+  margin-top: 41px;
+}
+
+.fourth-button {
+  margin-top: 80px;
 }
