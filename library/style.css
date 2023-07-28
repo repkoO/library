@@ -290,11 +290,6 @@ html {
   text-transform: capitalize;
 }
 
-/* .favorites-book__container {
-  flex-grow: 0.4;
-  flex-shrink: 1;
-  flex-basis: auto;
-} */
 
 .favorites-book__container-text {
   color: #000;
@@ -342,3 +337,178 @@ html {
 .fourth-button {
   margin-top: 80px;
 }
+
+/* Coffee Shop */
+
+.coffee-shop {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.coffee-shop__wrapper {
+  padding-left: 20px;
+}
+
+.coffee-shop__text p {
+  width: 1400px;
+  padding-top: 40px;
+  color: #000;
+  font-family: 'Inter';
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+}
+
+.coffee-shop__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.coffee-shop__container-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.coffee-shop__container-item {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+}
+
+.coffee-shop__container-items-title {
+  color: #BB945F;
+  font-family: 'Forum';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.coffee-shop__container-item-border {
+  width: 100px;
+  height: 1px;
+  background: #BB945F;
+}
+
+.coffee-shop__container-item-title {
+  color: #000;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  flex: 1 1 auto;
+}
+
+.coffee-shop__container-item-price {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.desert-title {
+  text-align: end;
+}
+
+/* our-contacts */ 
+
+.our-contacts {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.our-contacts_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px 34px 20px;
+}
+
+.our-contacts_info-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.our-contacts_info-item-title {
+  color: #000;
+  text-align: left;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.our-contacts_info-item-contacts {
+  color: #000;
+  text-align: left;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.our-contacts_info-item-contacts_item1 {
+  padding-bottom: 20px;
+}
+
+.our-contacts_info-item-contacts_item2 {
+  padding-bottom: 20px;
+}
+
+.our-contacts_info-item-senior {
+  color: #000;
+  text-align: left;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding-bottom: 18px;
+}
+
+.our-contacts_info-item-director {
+  color: #000;
+  text-align: left;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+/* cards */
+/* 
+.cards {
+  width: 1440px;
+  margin: 0 auto;
+} */
+
+/* .cards-wrapper {
+  padding: 20px 20px 40px 20px;
+} */
