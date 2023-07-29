@@ -702,6 +702,7 @@ html {
   line-height: normal;
   letter-spacing: 1px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .cards-get__button:hover {
@@ -749,11 +750,7 @@ html {
   line-height: 20px; /* 133.333% */
 }
 
-.footer-contacts__adress a {
-  text-decoration: none;
-  color: inherit;
-}
-
+.footer-contacts__adress a,
 .footer-contacts__adress a:visited {
   text-decoration: none;
   color: inherit;
@@ -801,12 +798,14 @@ html {
   letter-spacing: 2px;
 }
 
-.footer__links-action a {
+.footer__links-action a,
+.footer__links-action a:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.footer__links-action a:visited {
+.links a,
+.links a:visited {
   text-decoration: none;
-  color: inherit;
+  color: inherit
 }
