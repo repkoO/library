@@ -757,10 +757,14 @@ html {
 }
 
 .footer-contacts__icon {
+  padding: 6px 0 0 0;
+}
+
+.footer-ul {
   display: flex;
   flex-direction: row;
   column-gap: 15px;
-  padding: 6px 0 0 0;
+  list-style: none;
 }
 
 .footer-time {
