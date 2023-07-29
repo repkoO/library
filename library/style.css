@@ -100,6 +100,12 @@ html {
   line-height: 50px;
 }
 
+.ul__wrapper a:hover {
+  transition: 0.2s ease-in;
+  text-decoration: underline;
+  color: #BB945F;
+}
+
 .header-logo {
   margin-top: 11px;
   margin-bottom: 11px;
@@ -343,6 +349,13 @@ html {
   line-height: normal;
   letter-spacing: 1px;
   background: transparent;
+  cursor: pointer;
+}
+
+.favorites-book__button:hover {
+  border: 1px solid #BB945F;
+  background: #BB945F;
+  transition: 0.2s ease-in;
 }
 
 .second-button {
@@ -351,6 +364,17 @@ html {
 
 .fourth-button {
   margin-top: 80px;
+  border-radius: 2px;
+  border: 1px solid #BB945F;
+  color: #BB945F;
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  pointer-events: none;
 }
 
 /* Coffee Shop */
@@ -487,6 +511,11 @@ html {
   text-transform: capitalize;
 }
 
+.our-contacts_info-item-contacts a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .our-contacts_info-item-contacts_item1 {
   padding-bottom: 20px;
 }
@@ -518,6 +547,11 @@ html {
   line-height: 40px; /* 200% */
   letter-spacing: 2px;
   text-transform: capitalize;
+}
+
+.our-contacts_info-item-director a { 
+  text-decoration: none;
+  color: inherit;
 }
 
 /* cards */
@@ -613,6 +647,14 @@ html {
   border-radius: 2px;
   border: 1px solid #0C0C0E;
   background-color: #FFF;
+  cursor: pointer;
+}
+
+.cards-input__container-button:hover {
+  border-radius: 2px;
+  border: 1px solid #BB945F;
+  background: #BB945F;
+  transition: 0.2s ease-in;
 }
 
 .cards-get {
@@ -662,6 +704,13 @@ html {
   background-color: transparent;
 }
 
+.cards-get__button:hover {
+  border-radius: 2px;
+  border: 1px solid #BB945F;
+  background: #BB945F;
+  transition: 0.2s ease-in;
+}
+
 .cards-get__button:not(:last-child) {
   margin-right: 15px;
 }
@@ -698,6 +747,16 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 133.333% */
+}
+
+.footer-contacts__adress a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-contacts__adress a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer-contacts__icon {
@@ -740,4 +799,14 @@ html {
   font-weight: 400;
   line-height: 20px; /* 100% */
   letter-spacing: 2px;
+}
+
+.footer__links-action a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__links-action a:visited {
+  text-decoration: none;
+  color: inherit;
 }
