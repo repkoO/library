@@ -138,7 +138,7 @@ html {
 
 .image-container {
   height: 600px;
-  background: url(./assets/Welcome.png) center no-repeat;
+  background: url(./assets/welcome/Welcome.png) center no-repeat;
 }
 
 .welcome-title {
