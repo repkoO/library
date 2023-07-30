@@ -53,6 +53,8 @@ html {
 
 .header {
   background-color: #0C0C0E;
+  width: 1440px;
+  margin: 0 auto;
   background-size: 100%
 }
 
@@ -68,8 +70,6 @@ html {
 }
 
 .header__wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -112,12 +112,14 @@ html {
 .header-logo {
   width: 28px;
   height: 28px;
-  margin-left: 42px;
+  margin-left: 40px;
 }
 
 /** Welcome **/
 
 .welcome {
+  width: 1440px;
+  margin: 0 auto;
   position: relative;
   background-color: black;
 }
@@ -134,8 +136,7 @@ html {
   }
 
 .image-container {
-  width: 1440px;
-  margin: 0 auto;
+
   min-height: 600px;
   padding: 0;
   background: url(./assets/welcome/Welcome.png) center no-repeat;
@@ -773,13 +774,13 @@ html {
 /* footer */
 
 .footer {
+  width: 1440px;
+  margin: 0 auto;
   background-color: black;
 }
 
 
 .footer-wrapper {
-  width: 1440px;
-  margin: 0 auto;
   padding: 18px 20px 44px 20px;
 }
 
