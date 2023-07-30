@@ -57,6 +57,7 @@ html {
 }
 
 .header-title {
+  flex: 1 0 50%;
   color: #FFF;
   font-family: 'Forum';
   font-size: 30px;
@@ -72,7 +73,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 20px 21px 20px;
+  padding: 20px;
 }
 
 .nav {
@@ -111,6 +112,7 @@ html {
 .header-logo {
   width: 28px;
   height: 28px;
+  margin-left: 42px;
 }
 
 /** Welcome **/
@@ -244,14 +246,59 @@ html {
   font-family: 'Inter';
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
 }
-
-.favorites-inputs {
+.favorites__buttons {
+  padding: 36px 20px 33px 17px;
   display: flex;
-  gap: 90px;
-  padding: 40px 0px 40px 20px;
+}
+
+.favorites__button {
+  display: flex;
+}
+
+.favorites__button:not(:last-child) {
+  margin-right: 77px;
+}
+
+.favorites__button-label {
+  padding: 5px 5px 5px 42px;
+  position: relative;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+
+.favorites__button-label::after {
+ display: block;
+ content: attr(title);
+ font-weight: bold;
+ height: 0;
+ overflow: hidden;
+ visibility: hidden;
+}
+
+
+.favorites__button input {
+ display: none;
+}
+
+.favorites__button-label::before {
+ position: absolute;
+ content: '';
+ top: 25%;
+ left: 5px;
+ width: 17px;
+ height: 17px;
+ background: url(./assets/favorites/rb-uncheck.svg) no-repeat;
+}
+
+.favorites__button input:checked+.favorites__button-label::before {
+ background: url(./assets/favorites/rb-check.svg);
+}
+
+
+.favorites__button input:checked~label {
+ font-weight: 700;
 }
 
 .favorites-wrapper {
@@ -733,7 +780,7 @@ html {
 .footer-wrapper {
   width: 1440px;
   margin: 0 auto;
-  padding: 16px 20px 44px 20px;
+  padding: 18px 20px 44px 20px;
 }
 
 .footer-contacts {
@@ -764,7 +811,7 @@ html {
 }
 
 .footer-contacts__icon {
-  padding: 6px 0 0 0;
+  padding: 8px 0 0 0;
 }
 
 .footer-ul {
