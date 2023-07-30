@@ -50,17 +50,10 @@ html {
   }
 }
 
-.wrapper {
-  background-color: #0C0C0E;
-}
 
 .header {
+  background-color: #0C0C0E;
   background-size: 100%
-}
-
-.header-container {
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .header-title {
@@ -74,6 +67,8 @@ html {
 }
 
 .header__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -224,6 +219,9 @@ html {
   margin: 0 auto;
 }
 
+.favorites-hidden {
+  display: none;
+}
 
 .favorites-title-header {
   color: #000;
