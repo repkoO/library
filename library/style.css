@@ -118,7 +118,7 @@ html {
 /** main **/
 
 .main {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -565,6 +565,17 @@ html {
   padding-bottom: 20px;
 }
 
+.our-contacts_info-item-contacts a:hover {
+  transition: 0.2s ease-in;
+  color: #BB945F;
+  text-decoration: underline;
+}
+
+.our-contacts_info-item-director a:hover {
+  transition: 0.2s ease-in;
+  text-decoration: underline;
+}
+
 .our-contacts_info-item-senior {
   color: #000;
   text-align: left;
@@ -842,6 +853,12 @@ html {
 .footer__links-action a:visited {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__links a:hover {
+  transition: 0.3s ease-in-out;
+  text-decoration: underline;
+  border-color: #BB945F;
 }
 
 .links a,
