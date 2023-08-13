@@ -577,6 +577,17 @@ body._lock {
   color: inherit;
 }
 
+.our-contacts_info-item-contacts a:hover {
+  transition: 0.2s ease-in;
+  color: #BB945F;
+  text-decoration: underline;
+}
+
+.our-contacts_info-item-director a:hover {
+  transition: 0.2s ease-in;
+  text-decoration: underline;
+}
+
 .our-contacts_info-item-contacts_item1 {
   padding-bottom: 20px;
 }
@@ -869,16 +880,16 @@ body._lock {
   letter-spacing: 2px;
 }
 
-.footer__links-action a,
-.footer__links-action a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
 .footer__links a:hover {
   transition: 0.3s ease-in-out;
   text-decoration: underline;
   border-color: #BB945F;
+}
+
+.footer__links-action a,
+.footer__links-action a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .links a,
