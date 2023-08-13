@@ -71,7 +71,7 @@ body._lock {
 }
 
 .header-title {
-  flex: 1 0 50%;
+  flex: 1 0 auto;
   color: #FFF;
   font-family: 'Forum';
   font-size: 30px;
@@ -157,6 +157,7 @@ body._lock {
   min-height: 600px;
   padding: 0;
   background: url(./assets/welcome/Welcome.png) center no-repeat;
+  background-size: cover;
 }
 
 .welcome-title {
@@ -982,7 +983,7 @@ body._lock {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 107px 100px 107px;
+    padding: 100px 119px 100px 107px;
     gap: 30px;
   }
 
@@ -1003,7 +1004,7 @@ body._lock {
   .header-logo {
     margin-right: 40px;
   }
-  
+
   /* about */
 
   .about {
@@ -1014,9 +1015,14 @@ body._lock {
     width: auto;
   }
 
+  .section-title {
+    padding-top: 0;
+  }
+
   .images-items {
     align-items: center;
     gap: 58px;
+    padding: 20px 0 20px 0;
   }
 
   .pagination-3__hidden {
@@ -1029,16 +1035,21 @@ body._lock {
 
   .arrow__hidden {
     display: block;
+    margin-top: 45px;
   }
 
   .images-items__hidden {
     display: none;
   }
 
+  .pagination {
+    padding-top: 5px;
+  }
+
   /* favortites */
-  
-  .favorites__button:not(:last-child) {
-    margin-right: 5%;
+
+  .favorites-wrapper {
+    padding: 0 40px 60px 0;
   }
 
   /* coffee-shop */ 
@@ -1046,6 +1057,14 @@ body._lock {
   .coffee-shop__container {
     flex-direction: column;
     row-gap: 40px;
+  }
+
+  .coffee-shop__wrapper {
+    padding-bottom: 60px;
+  }
+
+  .item-left {
+    margin-right: auto;
   }
 
   /* contacts */
@@ -1057,6 +1076,9 @@ body._lock {
 
   .our-contacts_info-map img {
     max-width: 100%;
+    margin-left: 16px;
+    margin-top: 2px;
+    margin-bottom: 22px;
   }
 
   /* cards */
@@ -1064,6 +1086,10 @@ body._lock {
   .cards-wrapper {
     flex-direction: column;
     align-items: center;
+  }
+
+  .cards-get__button {
+    margin-top: 6px;
   }
   
   .cards-get {
@@ -1085,12 +1111,9 @@ body._lock {
 
 }
 
-@media screen and (max-width: 649px) { 
-
-  .favorites-book__container-img {
-    left: 384px;
+@media screen and (max-width: 727px) { 
+  .favorites__button:not(:last-child) {
+    margin-right: 8%;
   }
 }
-
-
 
