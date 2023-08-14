@@ -7,6 +7,13 @@ burgerMenu.addEventListener('click', () => {
 
 })
 
+document.addEventListener('click', (e) => {
+    if (e.target !== (navMenu && burgerMenu)) {
+        navMenu.classList.remove('_active');
+        burgerMenu.classList.remove('_active');
+    }
+})
+
 navMenu.addEventListener('click', () => {
     navMenu.classList.remove('_active')
     burgerMenu.classList.remove('_active');
